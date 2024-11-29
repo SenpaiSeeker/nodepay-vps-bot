@@ -13,9 +13,7 @@ async function main() {
 
   const bot = new Bot(config);
 
-  const singleToken =
-    "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMzA3MzA0MzMzNzA4MDk5NTg0IiwiaWF0IjoxNzMyODQzNjczLCJleHAiOjE3MzQwNTMyNzN9.5COiNJVFISdntHfXV1dQ5g3VwQj1i43TblwuJnHyUFEx-PSQ-tKrdRe5zUpAygNcu93HzKBy7mBv7ixausZKnQ";
-
+  const singleToken = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMzA3MTg4MTEyNzE5MzQ3NzEyIiwiaWF0IjoxNzMyNTM3Mzk3LCJleHAiOjE3MzM3NDY5OTd9.9HWf9jx0IhM80Hs5tyZyv6Z-es-8_UocZ39IVTJjlMnoSgkDfEh1OhBAh4iGMEEDg6ATBQo_hfjixGinsMNjgg"
   bot.connect(singleToken).catch((err) => console.log(`❌ ${err.message}`.red));
 
   process.on("SIGINT", () => {
